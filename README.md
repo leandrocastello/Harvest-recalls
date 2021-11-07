@@ -29,44 +29,44 @@ Results
 
 #results from: full models.R
 
-•	averaged.bad.models.delta2.rds
+  •	averaged.bad.models.delta2.rds
 
-•	averaged.typ.models.delta2.rds
+  •	averaged.typ.models.delta2.rds
 
-•	averaged.good.models.delta2.rds
+  •	averaged.good.models.delta2.rds
 
 
 #results from: simple bad, typical, good models.R
 
-•	simple_good_model.rds
+  •	simple_good_model.rds
 
-•	simple_typ_model.rds
+  •	simple_typ_model.rds
 
-•	simple_bad_model.rds
+  •	simple_bad_model.rds
 
-•	simple_bad_model MAE.csv
+  •	simple_bad_model MAE.csv
 
-•	simple_bad_model MAPE.csv
+  •	simple_bad_model MAPE.csv
 
-•	simple_bad_model MPE.csv
+  •	simple_bad_model MPE.csv
 
-•	simple_typ_mod MAE.csv
+  •	simple_typ_mod MAE.csv
 
-•	simple_typ_mod MAPE.csv
+  •	simple_typ_mod MAPE.csv
 
-•	simple_typ_mod MPE.csv
+  •	simple_typ_mod MPE.csv
 
-•	simple_good_mod MAE.csv
+  •	simple_good_mod MAE.csv
 
-•	simple_good_mod MAPE.csv
+  •	simple_good_mod MAPE.csv
 
-•	simple_good_mod MPE.csv
+  •	simple_good_mod MPE.csv
 
 
 #results from: bad, typical, good models without covariates.R
 
-•	typ_mod.rds
+  •	typ_mod.rds
 
-•	bad_mod.rds
+  •	bad_mod.rds
 
-•	good_mod.rds
+  •	good_mod.rds
