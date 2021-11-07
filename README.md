@@ -27,12 +27,12 @@ Scripts
 _________________________
 Results
 
-results from full models.R
+results from: full models.R
 •	averaged.bad.models.delta2.rds
 •	averaged.typ.models.delta2.rds
 •	averaged.good.models.delta2.rds
 
-results from simple bad, typical, good models.R
+results from: simple bad, typical, good models.R
 •	simple_good_model.rds
 •	simple_typ_model.rds
 •	simple_bad_model.rds
@@ -49,7 +49,7 @@ results from simple bad, typical, good models.R
 •	simple_good_mod MAPE.csv
 •	simple_good_mod MPE.csv
 
-results from bad, typical, good models without covariates.R
+results from: bad, typical, good models without covariates.R
 •	typ_mod.rds
 •	bad_mod.rds
 •	good_mod.rds
