@@ -5,7 +5,7 @@ The following R packages were used to analyze the data:
 install.packages(c("tidyverse", " nlme, "MuMIn", "broom", "dplyr", "splines", "caret", "yardstick")
 
 _________________________
-**Data**
+## **Data**
 
 •	dat_good: all data used in the analyses of good recalled harvest, including scaled recalled harvest (cpue_fisherz), observed harvest (cpue_sci), fisher identification number (id), scaled age of the individuals (s.fisher.agez), fishery name (f.name), role of the fisher (f.role) as boat captain (yes or no), fishery type (industrial or artisanal), unique identifier of each observation analyzed used for cross-validation (UniqueID), scaled time elapsed (timez), scaled psychological commitment (p.percep.res.depz), scaled dependency on harvesting work (e.fish.totalz), scaled learned from others (p.others.scalez), scaled learned from family (p.family.scalez), and scaled learned alone (p.alone.scalez)
 
@@ -14,7 +14,7 @@ _________________________
 •	dat_typ: all data used in the analyses of typical recalled harvest, including scaled recalled harvest (cpue_fisherz), observed harvest (cpue_sci), fisher identification number (id), scaled age of the individuals (s.fisher.agez), fishery name (f.name), role of the fisher (f.role) as boat captain (yes or no), fishery type (industrial or artisanal), unique identifier of each observation analyzed used for cross-validation (UniqueID), scaled time elapsed (timez), scaled psychological commitment (p.percep.res.depz), scaled dependency on harvesting work (e.fish.totalz), scaled learned from others (p.others.scalez), scaled learned from family (p.family.scalez), and scaled learned alone (p.alone.scalez).
 
 _________________________
-**Scripts**
+## **Scripts**
 
 •	full models.R: first computes all possible models (for good, poor, and typical harvest) based on all predictor variables and covariates; then computes averaged models based on top models with delta AIC <2
 
@@ -25,9 +25,9 @@ _________________________
 •	bad, typical, good models without covariates.R: computes models (for good, poor, and typical harvest) based only on recalled harvests without any covariate
 
 _________________________
-**Results**
+## **Results**
 
-#results from: full models.R
+##### *Results from: full models.R*
 
   •	averaged.bad.models.delta2.rds
 
@@ -36,7 +36,7 @@ _________________________
   •	averaged.good.models.delta2.rds
 
 
-#results from: simple bad, typical, good models.R
+##### *Results from: simple bad, typical, good models.R*
 
   •	simple_good_model.rds
 
@@ -63,7 +63,7 @@ _________________________
   •	simple_good_mod MPE.csv
 
 
-#results from: bad, typical, good models without covariates.R
+##### *Results from: bad, typical, good models without covariates.R*
 
   •	typ_mod.rds
 
