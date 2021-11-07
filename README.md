@@ -27,8 +27,8 @@ _________________________
 _________________________
 **Results**
 
-_#results from: full models.R
-_
+#results from: full models.R
+
   •	averaged.bad.models.delta2.rds
 
   •	averaged.typ.models.delta2.rds
@@ -36,8 +36,8 @@ _
   •	averaged.good.models.delta2.rds
 
 
-_#results from: simple bad, typical, good models.R
-_
+#results from: simple bad, typical, good models.R
+
   •	simple_good_model.rds
 
   •	simple_typ_model.rds
@@ -63,8 +63,8 @@ _
   •	simple_good_mod MPE.csv
 
 
-_#results from: bad, typical, good models without covariates.R
-_
+#results from: bad, typical, good models without covariates.R
+
   •	typ_mod.rds
 
   •	bad_mod.rds
