@@ -19,11 +19,11 @@ _________________________
 
 * `full models.R`: first computes all possible models (for good, poor, and typical harvest) based on all predictor variables and covariates; then computes averaged models based on top models with delta AIC <2
 
-* `best bad, good, typical models.R`: computes best averaged models (for good, poor, and typical harvest) based on results from full models.R
+* `best bad, good, typical models.R`: simply computes "best" averaged models (for good, poor, and typical harvest) based on results from full models.R so they can be plotted in Fig. 2A of the paper
 
-* `simple bad, typical, good models.R`: first computes simplified versions of the best models including only age of the individuals and time elapsed since the recalled harvest (for good, poor, and typical harvest); then cross-validates models; and finally calculates MAE, MAPE, and MPE
+* `simple bad, typical, good models.R`: first it computes simplified versions of the best models including only age of the individuals and time elapsed since the recalled harvest (for good, poor, and typical harvest). These are plotted in Fig. 2B of the paper; then it cross-validates models; finally it calculates MAE, MAPE, and MPE, which are plotted in Fig 4A-B of the paper
 
-* `bad, typical, good models without covariates.R`: computes models (for good, poor, and typical harvest) based only on recalled harvests without any covariate
+* `bad, typical, good models without covariates.R`: computes models (for good, poor, and typical harvest) based only on recalled harvests without any covariate, which are plotted in Fig. 4C of the paper
 
 _________________________
 ## **Results**
