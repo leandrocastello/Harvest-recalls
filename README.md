@@ -38,11 +38,11 @@ _________________________
 
 #### * Results from script: best bad, good, typical models.R*
 
- * `best_typ_model.rds'
+ * `best_typ_model.rds`
  
- * `best_bad_model.rds'
+ * `best_bad_model.rds`
  
- * `best_good_model.rds'
+ * `best_good_model.rds`
 
 
 ##### *Results from script: simple bad, typical, good models.R*
