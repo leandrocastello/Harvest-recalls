@@ -28,7 +28,7 @@ _________________________
 _________________________
 ## **Results**
 
-##### *Results from: full models.R*
+##### *Results from script: full models.R*
 
  * `averaged.bad.models.delta2.rds`
 
@@ -37,7 +37,7 @@ _________________________
  * `averaged.good.models.delta2.rds`
 
 
-##### *Results from: simple bad, typical, good models.R*
+##### *Results from script: simple bad, typical, good models.R*
 
  * `simple_good_model.rds`
 
@@ -64,7 +64,7 @@ _________________________
  * `simple_good_mod MPE.csv`
 
 
-##### *Results from: bad, typical, good models without covariates.R*
+##### *Results from script: bad, typical, good models without covariates.R*
 
   * `typ_mod.rds`
 
