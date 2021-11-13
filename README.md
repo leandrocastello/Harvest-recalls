@@ -54,19 +54,13 @@ _________________________
 
  * `simple_bad_model.rds`
 
- * `simple_bad_model MAE.csv`
-
  * `simple_bad_model MAPE.csv`
 
  * `simple_bad_model MPE.csv`
 
- * `simple_typ_mod MAE.csv`
-
  * `simple_typ_mod MAPE.csv`
 
  * `simple_typ_mod MPE.csv`
-
- * `simple_good_mod MAE.csv`
 
  * `simple_good_mod MAPE.csv`
 
