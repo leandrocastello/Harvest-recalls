@@ -35,8 +35,9 @@ _________________________
  * `averaged.typ.models.delta2.rds`
 
  * `averaged.good.models.delta2.rds`
+ 
 
-#### * Results from script: best bad, good, typical models.R*
+#### *Results from script: best bad, good, typical models.R*
 
  * `best_typ_model.rds`
  
