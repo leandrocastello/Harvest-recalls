@@ -1,0 +1,46 @@
+###################
+# CROSS-VALIDATION ANALYSIS
+
+m <- m2
+dados <- sub_dat
+
+###################
+# CREATING FOLDS AND DATAFRAMES
+
+all_participants<-unique(dados[['UniqueID']])
+all_participants <- na.omit(all_participants)
+
+#we create cross validation folds using caret's createFolds
+num_folds <- 5
+folds<-createFolds(all_participants,k=num_folds,list=TRUE,returnTrain=TRUE)
+#data structures to hold results
+MAPE_within_subjects_lmm <- c()
+MPE_within_subjects_lmm <- c()
+
+# CROSS=VALIDATING
+for(i in 1:num_folds){
+  train_ids<- folds[[i]]
+  test_ids<-all_participants[!(all_participants%in%folds[[i]])]
+  #generate train/test
+  test<-subset(dados,UniqueID%in%train_ids)
+  train<-subset(dados,UniqueID%in%test_ids)
+  #fit models
+  test_participants <- unique(test[['UniqueID']])
+  for(participant in test_participants){
+    prediction_subset <- subset(test,UniqueID==participant)
+    #predict
+    y_pred_lmm <- predict(m,newdata=prediction_subset,allow.new.levels=TRUE)
+    y_true <- prediction_subset[['cpue_fisher']]
+    MAPE_within_subjects_lmm<- c(MAPE_within_subjects_lmm, mape_vec(y_true, y_pred_lmm))
+    MPE_within_subjects_lmm<- c(MPE_within_subjects_lmm, mpe_vec(y_true, y_pred_lmm))
+    
+  }
+}
+
+# MAPE
+MAPE_data <- as.array(summary(MAPE_within_subjects_lmm))
+MAPE_data
+
+# MPE
+MPE_data <- as.array(summary(MPE_within_subjects_lmm))
+MPE_data
