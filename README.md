@@ -22,49 +22,18 @@ _________________________
 _________________________
 ## **Results**
 
-##### *Results from script:* `full models.R`
+##### *Results from script:* `accuracy analysis.R`
 
- * `averaged.bad.models.delta2.rds`
-
- * `averaged.typ.models.delta2.rds`
-
- * `averaged.good.models.delta2.rds`
+ * `accuracu.avg.model.rds`
  
-
-##### *Results from script:* `best bad, good, typical models.R`
-
- * `best_typ_model.rds`
  
- * `best_bad_model.rds`
+##### *Results from script:* `reliability analysis.R`
+
+ * `reliability.model.rds`
  
- * `best_good_model.rds`
+ 
+##### *Results from script:* `cross-validation.R`
 
+ * `MAPE_data.csv`
 
-##### *Results from script:* `simple bad, typical, good models.R`
-
- * `simple_good_model.rds`
-
- * `simple_typ_model.rds`
-
- * `simple_bad_model.rds`
-
- * `simple_bad_model MAPE.csv`
-
- * `simple_bad_model MPE.csv`
-
- * `simple_typ_mod MAPE.csv`
-
- * `simple_typ_mod MPE.csv`
-
- * `simple_good_mod MAPE.csv`
-
- * `simple_good_mod MPE.csv`
-
-
-##### *Results from script:* `bad, typical, good models without covariates.R`
-
-  * `typ_mod.rds`
-
-  * `bad_mod.rds`
-
-  * `good_mod.rds`
+ *  `MPE_data.csv`
