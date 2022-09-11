@@ -1,5 +1,5 @@
 # Harvest-recalls
-This repository contains R code for the Linear Mixed Models constructed in Castello et al. (Year), **Memories of past harvests can estimate historical resource use**. Journal name. Link to paper.
+This repository contains R code for the Linear Mixed Models constructed in Castello et al. (Year), Local knowledge reconstructs historical resource use. Journal name. Link to paper.
 
 The following R packages were used to analyze the data:
 ```
@@ -8,11 +8,7 @@ install.packages(c("tidyverse", " nlme, "MuMIn", "broom", "dplyr", "splines", "c
 _________________________
 ## **Data**
 
-* `dat_good`: all data used in the analyses of good recalled harvest, including recalled harvest (cpue_fisherz), observed harvest (cpue_sci), fisher identification number (id), age of the individuals (s.fisher.agez), fishery name (f.name), role of the fisher (f.role) as boat captain (yes or no), fishery type (industrial or artisanal), unique identifier of each observation analyzed used for cross-validation (UniqueID), time elapsed (timez), psychological commitment (p.percep.res.depz), dependency on harvesting work (e.fish.totalz), learned from others (p.others.scalez), learned from family (p.family.scalez), and learned alone (p.alone.scalez). All predictor or covariate continuous variables are scaled.
-
-* `dat_bad`: all data used in the analyses of poor recalled harvest, including recalled harvest (cpue_fisherz), observed harvest (cpue_sci), fisher identification number (id), age of the individuals (s.fisher.agez), fishery name (f.name), role of the fisher (f.role) as boat captain (yes or no), fishery type (industrial or artisanal), unique identifier of each observation analyzed used for cross-validation (UniqueID), time elapsed (timez), psychological commitment (p.percep.res.depz), dependency on harvesting work (e.fish.totalz), learned from others (p.others.scalez), learned from family (p.family.scalez), and learned alone (p.alone.scalez). All predictor or covariate continuous variables are scaled.
-
-* `dat_typ`: all data used in the analyses of typical recalled harvest, including recalled harvest (cpue_fisherz), observed harvest (cpue_sci), fisher identification number (id), age of the individuals (s.fisher.agez), fishery name (f.name), role of the fisher (f.role) as boat captain (yes or no), fishery type (industrial or artisanal), unique identifier of each observation analyzed used for cross-validation (UniqueID), time elapsed (timez), psychological commitment (p.percep.res.depz), dependency on harvesting work (e.fish.totalz), learned from others (p.others.scalez), learned from family (p.family.scalez), and learned alone (p.alone.scalez). All predictor or covariate continuous variables are scaled.
+* `dat`: all data used in the analyses of harvest recalls, including recalled harvest (cpue_fisher), observed harvest (cpue_sci), fisher identification number (fisher.id), age of the individuals (s.fisher.age), fishery name (f.name), unique identifier of each observation analyzed used for cross-validation (UniqueID), time elapsed (time), and type of harvest recall measure (recall.type).
 
 _________________________
 ## **Scripts**
