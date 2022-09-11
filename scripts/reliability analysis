@@ -1,0 +1,40 @@
+##################################
+# CREATING DATASET THAT EXCLUDES "BIASED" RECALLS
+
+age_time <- filter(fit_typ, between(fit, -10, 10)) %>%
+  mutate(rtime = round(time, 0), rage = round(age, 0))
+
+sub_dat <- select(dat, cpue_sci, cpue_fisher, cpue_fisherz, time, s.fisher.age, id, UniqueID, f.name, type) %>%
+  mutate(rtime = round(time, 0), rage = round(s.fisher.age, 0)) %>%
+  filter(type == "typical")
+
+comb <- which(sub_dat$rtime %in% age_time$rtime & sub_dat$rage %in% age_time$rage)
+
+sub_dat <- sub_dat[comb, ]%>%
+  mutate(centred_cpue_sci = cpue_sci - mean(cpue_sci),
+         cpue_diff_per = 100 * ((cpue_fisher - cpue_sci) / cpue_sci))
+summary(sub_dat)
+
+##################################
+# RUNNING MODEL BASED ON FILTERED DATA
+
+m2 <- lme(cpue_fisher ~ cpue_sci,
+          random = ~ 1|f.name/id,
+          #random = list(f.name = ~ 1, id = ~1),
+          #random = ~ centred_cpue_fisher - 1|f.name/id,
+          #random = ~ centred_cpue_fisher|f.name,
+          data = sub_dat, 
+          weights = varFixed(~ cpue_sci),
+          #weights =vf3,
+          #data = sub_dat, weights = varComb(varFixed(~ cpue_sci), varFixed(~cpue_fisher)),
+          method = "REML")
+
+summary(m2)
+
+#################
+# ASSESSING RESIDUALS
+plot(fitted(m2), resid(m2, type = "pearson"))
+qqnorm(resid(m2, type = "pearson"))
+qqline(resid(m2, type = "pearson"))
+plot(sub_dat$cpue_fisher, resid(m2, type = "pearson"))
+plot(sub_dat$cpue_sci, resid(m2, type = "pearson"))
