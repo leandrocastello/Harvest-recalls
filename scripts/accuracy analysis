@@ -1,0 +1,20 @@
+####################
+# RUNNING ACCURACY ANALYSIS
+
+m1 <- lme(cpue_diff_per ~ 
+            timez * s.fisher.agez + timez * type + s.fisher.agez * type,
+          random = ~ 1|f.name/id,
+          data = dat, weights = varComb(varIdent(form = ~1|type), varFixed(~cpue_diff_per)),
+          method = "REML")
+
+summary(m1) 
+
+#################
+# SELECTING AND AVERAGING MODELS
+m1 <- update(m1, method = "ML")
+msel <- dredge(m1)
+
+# Set subset to <= 0.98 to include all models just above 0.95
+top_mod <- get.models(msel, subset = cumsum(weight) <= 0.98, method = "REML")
+avg_model <- model.avg(top_mod)
+summary(avg_model)
