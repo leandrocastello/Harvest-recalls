@@ -13,13 +13,11 @@ _________________________
 _________________________
 ## **Scripts**
 
-* `full models.R`: first it computes all possible models (for good, poor, and typical harvest) based on all predictor variables and covariates; then it computes averaged models based on top models with delta AIC <2
+* `accuracy analysis.R`: first it computes all possible models (for good, poor, and typical harvest) based on time and age as predictors and difference between recalled and observed harvests as response; then it computes averaged models based on all models comprising at least 95% of cumulative AICc weights 
 
-* `best bad, good, typical models.R`: it simply computes "best" averaged models (for good, poor, and typical harvest) based on results from `full models.R` so they can be plotted in Fig. 2A of the paper
+* `reliability analysis.R`: using filtered data of recalls (based on results from accuracy analysis), it runs LMM between recalled harvest (as response) and observed harvest (as predictor)
 
-* `simple bad, typical, good models.R`: first it computes simplified versions of the best models including only age of the individuals and time elapsed since the recalled harvest (for good, poor, and typical harvest). These are plotted in Fig. 2B of the paper; finally it does a five-fold cross-validation of these models and uses the outputs to calculate median absolute percentage error (MAPE) and median percentage error (MPE), which are plotted in Fig 4A-B of the paper
-
-* `bad, typical, good models without covariates.R`: it computes models (for good, poor, and typical harvest) based only on recalled harvests without any covariate, which are plotted in Fig. 4C of the paper
+* `cross-validation.R`: does a five-fold cross-validation of model used in reliability analysis, and uses the outputs to calculate median absolute percentage error (MAPE) and median percentage error (MPE)
 
 _________________________
 ## **Results**
