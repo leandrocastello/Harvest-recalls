@@ -12,7 +12,7 @@ comb <- which(sub_dat$rtime %in% age_time$rtime & sub_dat$rage %in% age_time$rag
 
 sub_dat <- sub_dat[comb, ]%>%
   mutate(centred_cpue_sci = cpue_sci - mean(cpue_sci),
-         cpue_diff_per = 100 * ((cpue_fisher - cpue_sci) / cpue_sci))
+         cpue_diff_per = 100 - ((cpue_sci-cpue_fisher)/cpue_sci*100))
 summary(sub_dat)
 
 ##################################
