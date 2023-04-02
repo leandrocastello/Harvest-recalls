@@ -1,7 +1,7 @@
 ##################################
 # CREATING DATASET THAT EXCLUDES "BIASED" RECALLS
 
-age_time <- filter(fit_typ, between(fit, -10, 10)) %>%
+age_time <- filter(fit_typ, between(fit, 90, 110)) %>%
   mutate(rtime = round(time, 0), rage = round(age, 0))
 
 sub_dat <- select(dat, cpue_sci, cpue_fisher, cpue_fisherz, time, s.fisher.age, id, UniqueID, f.name, type) %>%
