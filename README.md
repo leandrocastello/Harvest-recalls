@@ -24,7 +24,7 @@ _________________________
 
 ##### *Results from script:* `accuracy analysis.R`
 
- * `accuracu.avg.model.rds`
+ * `accuracy.avg.model.rds`
  
  
 ##### *Results from script:* `reliability analysis.R`
