@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/425568674.svg)](https://zenodo.org/badge/latestdoi/425568674)
+
+
 # Harvest-recalls
 This repository contains R code for the Linear Mixed Models constructed in Castello et al. (Year), Local knowledge reconstructs historical resource use. Journal name. Link to paper.
 
