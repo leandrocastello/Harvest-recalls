@@ -2,7 +2,7 @@
 
 
 # Harvest-recalls
-This repository contains R code for the Linear Mixed Models constructed in Castello et al. (Year), Local knowledge reconstructs historical resource use. Journal name. Link to paper.
+This repository contains R code for the Linear Mixed Models constructed in: Castello et al. (In Press). Local knowledge reconstructs historical resource use. Frontiers in Ecology and the Environment. DOI: 10.1002/fee.2726
 
 The following R packages were used to analyze the data:
 ```
